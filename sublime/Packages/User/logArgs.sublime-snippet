@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+console.log(arguments);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>logArgs</tabTrigger>
+	<scope>source.js</scope>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

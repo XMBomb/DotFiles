@@ -1,0 +1,38 @@
+[
+	{ "keys": ["alt+q"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["alt+shift+q"], "command": "toggle_comment", "args": { "block": true } },
+
+	{ "keys": ["ctrl+alt+q"], "command": "undefined", "args": { "block": false } },
+	{ "keys": ["insert"], "command": "undefined", "args": { "block": false } },
+	{ "keys": ["shift+insert"], "command": "undefined", "args": { "block": true } },
+
+	{ "keys": ["ctrl+f7"], "command": "refresh_folder_list" },
+
+	{ "keys": ["ctrl+1"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
+	{ "keys": ["ctrl+tab"], "command": "next_view" },
+	{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+
+	{ "keys": ["ctrl+pagedown"], "command": "next_view_in_stack" },
+	{ "keys": ["ctrl+pageup"], "command": "prev_view_in_stack" },
+
+	{ "keys": ["ctrl+alt+f1"], "command": "valign" },
+
+	{ "keys": ["f1"], "command": "goto_documentation" },
+	{ "keys": ["f2"], "command": "use_it" },
+	{ "keys": ["f3"], "command": "stackoverflow_search_selection" },
+
+	{ "keys": ["ctrl+t"], "command": "sublimelint_all_errors"},
+	
+	{ "keys": ["ctrl+shift+g"], "command": "gotodefinition"},
+
+
+	{"keys": ["ctrl+shift+,"], "command": "add_date" },
+	{"keys": ["ctrl+shift+."], "command": "add_time" },
+	{"keys": ["ctrl+shift+-"], "command": "add_todo" },
+
+	
+	{"keys": ["ctrl+alt+c"], "command": "color_pick" },
+
+	{"keys": ["ctrl+shift+g"], "command": "goto_definition"},
+]
