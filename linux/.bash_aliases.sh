@@ -23,9 +23,13 @@ alias ladon="ssh ladon"
 alias heracles="ssh heracles"
 alias zeus="ssh root@zeus"
 alias artemis="ssh artemis"
-alias jrnl="ssh xmbomb@192.168.1.8 jrnl"
 alias lla="ls -lah"
 alias st="sudo ntpdate pool.ntp.org"
 alias www="cd /var/www/"
 alias codefortune="fgrep '/* ' /usr/src/linux* -r | cut -d '*' -f 2 | head -$((RANDOM)) | tail -1"
 alias ldir="ls -l | grep "^d" | awk '{print $9}'"
+
+function jrnl {
+  ssh xmbomb@192.168.1.8 "/usr/local/bin/jrnl \"$@\"; "&&
+  ssh xmbomb@192.168.1.8 "/usr/local/bin/jrnl --export json -o /mnt/zmain/Work/Journal/manager/export.json;";
+}
